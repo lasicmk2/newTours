@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ReservationTest {
+public class MenuTest {
 	
 	WebDriver driver;
 	
@@ -14,6 +14,7 @@ public class ReservationTest {
 	public void openPage() {
 		driver = Init.getDriver();
 	}
+	
 
 	@Test
 	public void topMenuTest() {
