@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class MenuTest {
 	
@@ -23,6 +24,14 @@ public class MenuTest {
 		driver.findElement(By.linkText("REGISTER")).click();
 		driver.findElement(By.linkText("SUPPORT")).click();
 		driver.findElement(By.linkText("CONTACT")).click();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		String title = driver.getTitle();
 		System.out.println(title);
 	}
